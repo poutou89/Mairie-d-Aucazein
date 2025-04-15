@@ -1,0 +1,38 @@
+@use "../abstract/variables" as vstyle;
+
+header {
+    background-color: vstyle.$bg-color;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .header-img {
+            width: 3.2rem;
+            a { 
+                img {
+                    width: 100%;
+                }
+                img:hover {
+                    opacity: 75%;
+                }
+            }
+        }
+        ul {
+            display: flex;
+            gap: 8vh;
+            li {
+                a {
+                    text-decoration: vstyle.$style-less;
+                    font-size: 2rem;
+                    color: vstyle.$text-color;
+                    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+                    transition: text-decoration-color 300ms;
+                }
+                a:hover{
+                    text-decoration-color: rgba(25,83,95, 1);
+                }
+                    
+            }
+        }
+    }
+}

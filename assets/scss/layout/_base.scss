@@ -1,6 +1,10 @@
 @use "../abstract/variables" as vstyle;
 
-h1, h2, h3, h4 {
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, a {
     font-family: vstyle.$font-titre;
 }
 
@@ -20,4 +24,8 @@ h4 {
 p {
     font-size: 1rem;
     font-family: vstyle.$font-text;
+}
+
+ul {
+    list-style: vstyle.$style-less;
 }
