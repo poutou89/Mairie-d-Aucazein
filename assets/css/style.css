@@ -1,3 +1,37 @@
+.container {
+  width: 80%;
+  max-width: 1400px;
+  margin: 1vh auto;
+  padding: 1rem 0;
+}
 
+h1, h2, h3, h4 {
+  font-family: "Marianne";
+}
+
+h1, h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url(../fonts/Marianne/Marianne-Regular.ttf);
+}
+@font-face {
+  font-family: "Spectral";
+  src: url(../fonts/Spectral/Spectral-Regular.ttf);
+}
 
 /*# sourceMappingURL=style.css.map */

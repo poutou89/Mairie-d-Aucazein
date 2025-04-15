@@ -1,0 +1,21 @@
+@use "../abstract/variables" as vstyle;
+
+h1, h2, h3, h4 {
+    font-family: vstyle.$font-titre;
+}
+
+h1, h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
