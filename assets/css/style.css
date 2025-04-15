@@ -67,6 +67,29 @@ ul {
   list-style: none;
 }
 
+footer {
+  background-color: #C3DAC3;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .footer-logo {
+  width: 3.2rem;
+}
+footer .container .footer-logo img {
+  width: 100%;
+}
+footer .container ul {
+  display: flex;
+  gap: 20vh;
+}
+footer .container .rs {
+  display: flex;
+  gap: 4vh;
+}
+
 @font-face {
   font-family: "Marianne";
   src: url(../fonts/Marianne/Marianne-Regular.ttf);

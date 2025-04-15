@@ -1,0 +1,24 @@
+@use "../abstract/variables" as vstyle;
+
+footer {
+    background-color: vstyle.$bg-color;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-logo {
+            width: 3.2rem;
+            img {
+                width: 100%;
+            }
+        }
+        ul {
+            display: flex;
+            gap: 20vh;
+        }
+        .rs {
+            display: flex;
+            gap: 4vh;
+        }
+    }
+}
