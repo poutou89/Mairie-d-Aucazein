@@ -41,10 +41,7 @@ body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   text-transform: uppercase;
   text-align: center;
 }
@@ -168,6 +165,80 @@ footer .container .rs {
   cursor: pointer;
 }
 
+.search {
+  padding: 1.5vh 2vh;
+  background-color: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #19535F;
+  text-decoration: none;
+  border: 2px solid #C3DAC3;
+  transition: 0.3s;
+}
+
+.search:hover {
+  color: #C3DAC3;
+  border: 2px solid #19535F;
+  cursor: pointer;
+}
+
+.formulaire-container {
+  background-color: #19535F;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 2vh auto;
+  color: white;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.formulaire {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formulaire-champ {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.formulaire-champ label {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.formulaire-champ input, .formulaire-champ textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.formulaire-champ textarea {
+  resize: vertical;
+  min-height: 5vh;
+}
+.formulaire-champ.champ-max {
+  grid-column: 1 4;
+  grid-row: 1 2;
+}
+.formulaire-champ.conteneur-bouton {
+  grid-column: 4;
+  display: flex;
+  justify-content: center;
+}
+
+.formulaire-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #FF7D00;
+  color: #19535F;
+}
+.formulaire-message.hidden {
+  display: none;
+}
+
 .card {
   background-color: #19535F;
   width: 20vw;
@@ -230,63 +301,6 @@ footer .container .rs {
 .frame {
   display: flex;
   align-items: center;
-}
-
-.formulaire-container {
-  background-color: #19535F;
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 2vh auto;
-  color: white;
-  width: 80%;
-  max-width: 1400px;
-}
-
-.formulaire {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.formulaire-champ {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-.formulaire-champ label {
-  margin-bottom: 0.5rem;
-  color: white;
-}
-.formulaire-champ input, .formulaire-champ textarea {
-  padding: 0.75rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-.formulaire-champ textarea {
-  resize: vertical;
-  min-height: 5vh;
-}
-.formulaire-champ.champ-max {
-  grid-column: 1 4;
-  grid-row: 1 2;
-}
-.formulaire-champ.conteneur-bouton {
-  grid-column: 4;
-  display: flex;
-  justify-content: center;
-}
-
-.formulaire-message {
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  background-color: #FF7D00;
-  color: #19535F;
-}
-.formulaire-message.hidden {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
