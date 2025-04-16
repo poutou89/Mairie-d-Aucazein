@@ -1,33 +1,67 @@
-const track = document.querySelector(".carousel-track");
-const images = document.querySelectorAll(".carousel-track img");
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
 
-let index = 0;
+(function () {
+  "use stict"
 
-// Duplique les images pour l’effet infini
-track.innerHTML += track.innerHTML;
+  const slideTimeout = 5000;
 
-const imageWidth = images[0].clientWidth;
+  const prev = document.querySelector('#prev');
+  const next = document.querySelector('#next');
 
-function updateCarousel() {
-  track.style.transform = `translateX(-${index * imageWidth}px)`;
-}
+  const $slides = document.querySelectorAll('.slide');
 
-// Bouton suivant
-nextButton.addEventListener("click", () => {
-  index++;
-  if (index >= images.length) {
-    index = 0;
+  let $dots;
+
+  let intervalId;
+
+  let currentSlide = 1;
+
+  function slideTo(index) {
+      currentSlide = index >= $slides.length || index < 1 ? 0 : index;
+
+      $slides.forEach($elt => $elt.style.transform = `translateX(-${currentSlide * 100}%)`);
+
+      $dots.forEach(($elt, key) => $elt.classList = `dot ${key === currentSlide? 'active': 'inactive'}`);
   }
-  updateCarousel();
-});
 
-// Bouton précédent
-prevButton.addEventListener("click", () => {
-  index--;
-  if (index < 0) {
-    index = images.length - 1;
+  function showSlide() {
+      slideTo(currentSlide);
+      currentSlide++;
   }
-  updateCarousel();
-});
+
+  for (let i = 1; i <= $slides.length; i++) {
+      let dotClass = i == currentSlide ? 'active' : 'inactive';
+      let $dot = `<span data-slidId="${i}" class="dot ${dotClass}"></span>`;
+      document.querySelector('.carousel-dots').innerHTML += $dot;
+  }
+
+  $dots = document.querySelectorAll('.dot');
+
+  $dots.forEach(($elt, key) => $elt.addEventListener('click', () => slideTo(key)));
+
+  prev.addEventListener('click', () => slideTo(--currentSlide))
+
+  next.addEventListener('click', () => slideTo(++currentSlide))
+
+  intervalId = setInterval(showSlide, slideTimeout)
+  $slides.forEach($elt => {
+      let startX;
+      let endX;
+      $elt.addEventListener('mouseover', () => {
+          clearInterval(intervalId);
+      }, false)
+      $elt.addEventListener('mouseout', () => {
+          intervalId = setInterval(showSlide, slideTimeout);
+      }, false);
+      $elt.addEventListener('touchstart', (event) => {
+          startX = event.touches[0].clientX;
+      });
+      $elt.addEventListener('touchend', (event) => {
+          endX = event.changedTouches[0].clientX;
+          if (startX > endX) {
+              slideTo(currentSlide + 1);
+          } else if (startX < endX) {
+              slideTo(currentSlide - 1);
+          }
+      });
+  })
+})()

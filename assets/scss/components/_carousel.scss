@@ -1,38 +1,69 @@
-.carousel {
-    position: relative;
-    width: 600px;
-    overflow: hidden;
-    border-radius: 10px;
-  
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-  
-    img {
-      width: 600px;
-      flex-shrink: 0;
-    }
-  
-    button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0,0,0,0.5);
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      z-index: 1;
-  
-      &.prev {
-        left: 10px;
-      }
-  
-      &.next {
-        right: 10px;
-      }
-    }
-  }
+@use "../abstract/variables" as vstyle;
 
-  
+.container {
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+  height: 50vh;
+  flex-wrap: nowrap;
+}
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  transition: .5s ease-in-out;
+  border-radius: 10px;
+}
+
+.slide img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-controls {
+  position: absolute;
+  z-index: 5;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-controls button {
+  padding: 4px 10px;
+  background-color: rgba(vstyle.$bg-color, 0.5);
+  border-radius: 10px;
+}
+
+.carousel-dots {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  right: 50%;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-dots .dot {
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.carousel-dots .active {
+  border: 10px solid vstyle.$bg-color !important;
+}
+
+.carousel-dots .inactive {
+  border: 10px solid vstyle.$text-color;
+}
