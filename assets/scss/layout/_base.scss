@@ -7,6 +7,14 @@ body {
 h1,
 h2,
 h3,
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
 h4,
 a {
     font-family: vstyle.$font-titre;
