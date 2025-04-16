@@ -35,3 +35,7 @@ p {
 ul {
     list-style: vstyle.$style-less;
 }
+
+textarea, input, button {
+    font-family: vstyle.$font-text;
+  } //rajout abdoul
