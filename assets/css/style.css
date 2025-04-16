@@ -73,6 +73,10 @@ ul {
   list-style: none;
 }
 
+textarea, input, button {
+  font-family: "Spectral";
+}
+
 main #Mairie .container {
   display: flex;
   flex-direction: column;
@@ -90,6 +94,7 @@ main #Mairie .presentation .presentation-text {
 }
 main #Mairie .presentation .presentation-img {
   width: 50%;
+  border: 10;
 }
 main #Mairie .presentation .presentation-img img {
   width: 100%;
