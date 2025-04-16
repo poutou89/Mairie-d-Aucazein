@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="header-img">
+            <a href=""><img src="assets/img/cb96a936-78c0-4090-8032-29f881d721f7.png" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">La Mairie</a></li>
+                <li><a href="">Actualités</a></li>
+                <li><a href="">Evenements</a></li>
+                <li><a href="">Découvrire</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="formulaire-container">
+    <form id="contactForm" class="formulaire">
+      <div class="formulaire-champ">
+        <label for="userName">Nom</label>
+        <input type="text" id="userName" name="userName" required />
+      </div>
+      <div class="formulaire-champ">
+        <label for="userFirstName">Prénom</label>
+        <input type="text" id="userFirstName" name="userFirstName" required />
+      </div>
+      <div class="formulaire-champ">
+        <label for="userPhone">Téléphone</label>
+        <input type="tel" id="userPhone" name="userPhone" />
+      </div>
+      <div class="formulaire-champ">
+        <label for="userEmail">Email</label>
+        <input type="email" id="userEmail" name="userEmail" required />
+      </div>
+      <div class="formulaire-champ champ-max">
+        <label for="userSubject">Objet</label>
+        <input type="text" id="userSubject" name="userSubject" />
+      </div>
+      <div class="formulaire-champ">
+        <label for="userMessage">Votre message</label>
+        <textarea id="userMessage" name="userMessage"></textarea>
+      </div>
+      <div class="formulaire-champ conteneur-bouton">
+        <button class="btn" type="submit">Envoyer</button>
+      </div>
+    </form>
+    <div id="formMessage" class="formulaire-message hidden"></div>
+  </div>
+  <footer>
+    <div class="container">
+        <div class="footer-logo">
+            <a href=""><img src="assets/img/cb96a936-78c0-4090-8032-29f881d721f7.png" alt=""></a>
+        </div>
+        <ul>
+            <li>Adresse: 5 place du Village,<br> 09800 France</li>
+            <li>Téléphone: 05.61.04.71.72</li>
+            <li><a href="">Mentions Légales</a></li>
+        </ul>
+        <div class="rs">
+            <img src="assets/img/facebook-f-brands (1).svg" alt="">
+            <img src="assets/img/wikipedia-w-brands (1).svg" alt="">
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>
