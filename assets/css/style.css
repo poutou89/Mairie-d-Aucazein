@@ -73,6 +73,29 @@ ul {
   list-style: none;
 }
 
+main #Mairie .container {
+  display: flex;
+  flex-direction: column;
+}
+main #Mairie .presentation {
+  display: flex;
+  gap: 2vh;
+  height: 55.3vh;
+}
+main #Mairie .presentation .presentation-text {
+  width: 50%;
+  background-color: #19535F;
+  color: white;
+  padding: 2vh;
+}
+main #Mairie .presentation .presentation-img {
+  width: 50%;
+}
+main #Mairie .presentation .presentation-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
 footer {
   background-color: #C3DAC3;
 }
