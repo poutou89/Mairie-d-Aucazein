@@ -1,0 +1,38 @@
+.ponts img {
+    object-position: top;
+}
+
+.chapelle img {
+    object-position: center;
+}
+
+.parc img {
+    object-position: center;
+}
+
+.jardin img {
+    object-position: center;
+}
+
+#decouvrir {
+    display: flex;
+    justify-content: center;
+
+}
+
+.decouverte {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+}
