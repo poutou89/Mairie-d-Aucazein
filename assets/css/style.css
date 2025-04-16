@@ -232,4 +232,61 @@ footer .container .rs {
   align-items: center;
 }
 
+.formulaire-container {
+  background-color: #19535F;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 2vh auto;
+  color: white;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.formulaire {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formulaire-champ {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.formulaire-champ label {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.formulaire-champ input, .formulaire-champ textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.formulaire-champ textarea {
+  resize: vertical;
+  min-height: 5vh;
+}
+.formulaire-champ.champ-max {
+  grid-column: 1 4;
+  grid-row: 1 2;
+}
+.formulaire-champ.conteneur-bouton {
+  grid-column: 4;
+  display: flex;
+  justify-content: center;
+}
+
+.formulaire-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #FF7D00;
+  color: #19535F;
+}
+.formulaire-message.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

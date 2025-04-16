@@ -2,11 +2,11 @@
 
 .formulaire-container {
   background-color: v.$text-color;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
-  margin: 5vh auto;
+  margin: 2vh auto;
   color: v.$white;
-  width: 100%;
+  width: 80%;
   max-width: 1400px;
 }
 
@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  
 
   label {
     margin-bottom: 0.5rem;
@@ -35,41 +36,28 @@
 
   textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 5vh;
   }
 
   &.champ-max {
-    grid-column: span 2;
+    grid-column: 1 4;
+    grid-row: 1 2;
   }
 
   &.conteneur-bouton {
-    grid-column: span 2;
+    grid-column: 4;
     display: flex;
-    justify-content: flex-end;
-
-    button {
-      background-color: v.$click-color;
-      color: v.$text-color;
-      padding: 0.75rem 2rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: opacity 0.3s ease;
-
-      &:hover {
-        opacity: 0.9;
-      }
+    justify-content: center;
     }
   }
-}
+
 
 .formulaire-message {
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 5px;
   font-size: 1rem;
-  background-color: lighten(v.$click-color, 20%);
+  background-color: v.$click-color;
   color: v.$text-color;
 
   &.hidden {
