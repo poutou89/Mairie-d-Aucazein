@@ -104,5 +104,21 @@ footer .container .rs {
   font-family: "Spectral";
   src: url(../fonts/Spectral/Spectral-Regular.ttf);
 }
+.btn {
+  padding: 1.5vh 2vh;
+  background-color: #FF7D00;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #19535F;
+  text-decoration: none;
+  border: 2px solid #FF7D00;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #19535F;
+  color: #FF7D00;
+  border: 2px solid #FF7D00;
+}
 
 /*# sourceMappingURL=style.css.map */
