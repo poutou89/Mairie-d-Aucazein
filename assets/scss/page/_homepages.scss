@@ -3,25 +3,32 @@
 main {
     #Mairie {
         .container {
+            h1 {
+                text-align: center;
+            }
             display: flex;
             flex-direction: column;
         }
         .presentation {
             display: flex;
-            gap: 2vh;
-            height: 55.3vh;
+            gap: 6vh;
+            height: 50vh;
             .presentation-text {
                 width: 50%;
                 background-color: vstyle.$text-color;
                 color: white;
                 padding: 2vh;
+                border-radius: 2vh;
+                box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
             }
             .presentation-img {
                 width: 50%;
-                border: 10;
+                
                 img {
                     width: 100%;
                     object-fit: cover;
+                    border-radius: 2vh;
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
                 }
             }
         }

@@ -44,6 +44,13 @@ body {
 h1,
 h2,
 h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
 h4,
 a {
   font-family: "Marianne";
@@ -81,24 +88,30 @@ main #Mairie .container {
   display: flex;
   flex-direction: column;
 }
+main #Mairie .container h1 {
+  text-align: center;
+}
 main #Mairie .presentation {
   display: flex;
-  gap: 2vh;
-  height: 55.3vh;
+  gap: 6vh;
+  height: 50vh;
 }
 main #Mairie .presentation .presentation-text {
   width: 50%;
   background-color: #19535F;
   color: white;
   padding: 2vh;
+  border-radius: 2vh;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 main #Mairie .presentation .presentation-img {
   width: 50%;
-  border: 10;
 }
 main #Mairie .presentation .presentation-img img {
   width: 100%;
   object-fit: cover;
+  border-radius: 2vh;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
