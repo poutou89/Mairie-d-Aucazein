@@ -15,6 +15,12 @@ footer {
         ul {
             display: flex;
             gap: 20vh;
+            li {
+                a {
+                    text-decoration: vstyle.$style-less;
+                    color: black;
+                }
+            }
         }
         .rs {
             display: flex;
