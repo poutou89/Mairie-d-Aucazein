@@ -41,11 +41,16 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, a {
+h1,
+h2,
+h3,
+h4,
+a {
   font-family: "Marianne";
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 3rem;
   color: #19535F;
 }
@@ -56,6 +61,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 p {
