@@ -5,6 +5,11 @@ body {
 }
 
 h1,
+h2 {
+    text-align: center;
+}
+
+h1,
 h2,
 h3,
 h4 {
@@ -21,7 +26,8 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-size: 3rem;
     color: vstyle.$text-color;
   
@@ -45,6 +51,10 @@ ul {
     list-style: vstyle.$style-less;
 }
 
-textarea, input, button {
+textarea,
+input,
+button {
     font-family: vstyle.$font-text;
-  } //rajout abdoul
+}
+
+//rajout abdoul
