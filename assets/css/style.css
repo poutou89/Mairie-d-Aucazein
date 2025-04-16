@@ -42,6 +42,11 @@ body {
 }
 
 h1,
+h2 {
+  text-align: center;
+}
+
+h1,
 h2,
 h3,
 h4 {
@@ -57,7 +62,8 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-size: 3rem;
   color: #19535F;
 }
@@ -80,7 +86,9 @@ ul {
   list-style: none;
 }
 
-textarea, input, button {
+textarea,
+input,
+button {
   font-family: "Spectral";
 }
 
@@ -188,42 +196,59 @@ footer .container .rs {
   object-fit: cover;
 }
 
-.ponts img {
-  object-position: top;
-}
-
-.chapelle img {
-  object-position: center;
-}
-
-.parc img {
-  object-position: center;
-}
-
-.jardin img {
-  object-position: center;
-}
-
 #decouvrir {
   display: flex;
   justify-content: center;
 }
-
-.decouverte {
+#decouvrir .decouverte {
   width: 80%;
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
 }
-
-.flex {
+#decouvrir .decouverte .flex {
   display: flex;
   flex-direction: column;
 }
-
-.frame {
+#decouvrir .decouverte .flex .ponts img {
+  object-position: top;
+}
+#decouvrir .decouverte .flex .chapelle img {
+  object-position: center;
+}
+#decouvrir .decouverte .flex .parc img {
+  object-position: center;
+}
+#decouvrir .decouverte .flex .jardin img {
+  object-position: center;
+}
+#decouvrir .decouverte .frame {
   display: flex;
   align-items: center;
+}
+
+.commune {
+  width: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.commune .histoire {
+  padding: 0 1rem;
+  width: 100%;
+  background-color: #19535F;
+  border-radius: 0.8rem;
+}
+.commune .histoire h3,
+.commune .histoire p {
+  color: white;
+}
+
+.activite {
+  display: flex;
+  justify-content: space-between;
+}
+.activite .sport img {
+  object-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */
