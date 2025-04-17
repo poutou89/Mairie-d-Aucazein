@@ -1,87 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Mairie</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
   <header>
     <div class="container">
-        <div class="header-img">
-            <a href=""><img src="assets/img/cb96a936-78c0-4090-8032-29f881d721f7.png" alt=""></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="mairie-Aucazein.html">La Mairie</a></li>
-                <li><a href="actualite.html">Actualités</a></li>
-                <li><a href="evenement.html">Evenements</a></li>
-                <li><a href="decouverte.html">Découvrir</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="header-img">
+        <a href="mairie-Aucazein.html"><img src="assets/img/cb96a936-78c0-4090-8032-29f881d721f7.png" alt=""></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="mairie.html">La Mairie</a></li>
+          <li><a href="actualite.html">Actualités</a></li>
+          <li><a href="evenement.html">Evenements</a></li>
+          <li><a href="decouverte.html">Découvrir</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
+  <main>
+    <section id="equipe">
+      <div class="container">
+        <h2>la mairie</h2>
+        <h3>Equipe municipale</h3>
+        <div class="municipale">
+          <div class="municipale-img">
+            <img src="assets/img/municipal aucazien.jpg" alt="">
+          </div>
+          <div class="municipale-text">
+            <p>Maire: Marcel AGERT, Prise de fonction le 23/05/2020</p>
+            <p>1er adjoint au Maire: Marion DUPUY</p>
+            <p>2ème adjoint au Maire Sylvie PUJOL </p>
+          </div>
+        </div>
+      </div>
+      <div class="separation"></div>
+    </section>
+    <section id="horaire">
+      <div class="container">
+        <h3>Horaire et contact</h3>
+        <div class="horaire">
+          <div class="horaire-text">
+            <h4>Horaire d'ouverture</h4>
+            <p>Mardi: 14h00 à 18h00</p>
+            <p>Du jeudi au vendredi: 08h30 à 12h00</p>
+            <h4>contact</h4>
+            <p>5 place du Village <br>09800 France <br>aucazein.mairie@wanadoo.fr</p>
+          </div>
 
-<div class="formulaire-container">
-    <form id="contactForm" class="formulaire">
-      <div class="formulaire-champ">
-        <label for="userName">Nom</label>
-        <input type="text" id="userName" name="userName" required />
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2065.482341646749!2d0.9746130758416344!3d42.93542820608177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a8c1fb67e96897%3A0xbd55f329b7605fe8!2sMairie!5e0!3m2!1sfr!2sfr!4v1744878840773!5m2!1sfr!2sfr"
+              width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
       </div>
-      <div class="formulaire-champ">
-        <label for="userFirstName">Prénom</label>
-        <input type="text" id="userFirstName" name="userFirstName" required />
-      </div>
-      <div class="formulaire-champ">
-        <label for="userPhone">Téléphone</label>
-        <input type="tel" id="userPhone" name="userPhone" />
-      </div>
-      <div class="formulaire-champ">
-        <label for="userEmail">Email</label>
-        <input type="email" id="userEmail" name="userEmail" required />
-      </div>
-      <div class="formulaire-champ champ-max">
-        <label for="userSubject">Objet</label>
-        <input type="text" id="userSubject" name="userSubject" />
-      </div>
-      <div class="formulaire-champ">
-        <label for="userMessage">Votre message</label>
-        <textarea id="userMessage" name="userMessage"></textarea>
-      </div>
-      <div class="formulaire-champ conteneur-bouton">
+      <div class="formulaire-container">
+        <form id="contactForm" class="formulaire">
+          <div class="formulaire-champ">
+            <label for="userName">Nom</label>
+            <input type="text" id="userName" name="userName" required />
+          </div>
+          <div class="formulaire-champ">
+            <label for="userFirstName">Prénom</label>
+            <input type="text" id="userFirstName" name="userFirstName" required />
+          </div>
+          <div class="formulaire-champ">
+            <label for="userPhone">Téléphone</label>
+            <input type="tel" id="userPhone" name="userPhone" />
+          </div>
+          <div class="formulaire-champ">
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" name="userEmail" required />
+          </div>
+          <div class="formulaire-champ champ-max">
+            <label for="userSubject">Objet</label>
+            <input type="text" id="userSubject" name="userSubject" />
+          </div>
+          <div class="formulaire-champ">
+            <label for="userMessage">Votre message</label>
+            <textarea id="userMessage" name="userMessage"></textarea>
+          </div>
+          <div class="formulaire-champ conteneur-bouton">
 
-        <button class="btn" type="submit">Envoyer</button>
+            <button class="btn" type="submit">Envoyer</button>
+          </div>
+        </form>
+        <div id="formMessage" class="formulaire-message hidden"></div>
+        
+
       </div>
-    </form>
-    <div id="formMessage" class="formulaire-message hidden"></div>
-  </div>
+      <div class="separation"></div>
+    </section>
+    <section id="service">
+      <div class="container">
+        <h3>Service en ligne</h3>
+        <div class="service">
+        <ul>
+          <li><a href="https://demarches.service-public.fr/mademarche/EtatCivil/demarche?action=NAISSANCE">Acte de naissance</a></li>
+          <li><a href="https://demarches.service-public.fr/mademarche/EtatCivil/demarche?action=DECES">Acte de décès</a></li>
+          <li><a href="https://demarches.service-public.fr/mademarche/EtatCivil/demarche?action=MARIAGE">Acte de mariage</a></li>
+          <li><a href="https://www.service-public.fr/particuliers/vosdroits/F961">Déclaration de naissance</a></li>
+          <li><a href="https://www.service-public.fr/particuliers/vosdroits/N31784">Livret de famille</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://passeport.ants.gouv.fr/demarches-en-ligne/effectuer-le-renouvellement-de-votre-carte-didentite">Carte d'identité</a></li>
+          <li><a href="https://passeport.ants.gouv.fr/">Passeport</a></li>
+          <li><a href="https://www.inscriptionelectorale.service-public.fr/">Carte électoral</a></li>
+          <li><a href="https://www.formulaires.service-public.fr/gf/cerfa_15725.do">Pacs</a></li>
+          <li><a href="https://www.service-public.fr/particuliers/vosdroits/N159">Acte de divorce</a></li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+  </main>
   <footer>
     <div class="container">
-        <div class="footer-logo">
-            <a href=""><img src="assets/img/cb96a936-78c0-4090-8032-29f881d721f7.png" alt=""></a>
-        </div>
-        <ul>
-            <li>Adresse: 5 place du Village,<br> 09800 France</li>
-            <li>Téléphone: 05.61.04.71.72</li>
-            <li><a href="">Mentions Légales</a></li>
-        </ul>
-        <div class="rs">
-            <img src="assets/img/facebook-f-brands (1).svg" alt="">
-            <img src="assets/img/wikipedia-w-brands (1).svg" alt="">
-        </div>
+      <div class="footer-logo">
+        <a href=""><img src="assets/img/cb96a936-78c0-4090-8032-29f881d721f7.png" alt=""></a>
+      </div>
+      <ul>
+        <li>Adresse: 5 place du Village,<br> 09800 France</li>
+        <li>Téléphone: 05.61.04.71.72</li>
+        <li><a href="">Mentions Légales</a></li>
+      </ul>
+      <div class="rs">
+        <a href=""><img src="assets/img/facebook-f-brands (1).svg" alt=""></a>
+        <a href=""><img src="assets/img/wikipedia-w-brands (1).svg" alt=""></a>
+      </div>
     </div>
-</footer>
+  </footer>
 
 </body>
 <script src="script.js"></script>
+
 </html>
-
-        <button type="submit">Envoyer</button>
-      </div>
-    </form>
-    <div id="formMessage" class="formulaire-message hidden"></div>
-  </div>
-

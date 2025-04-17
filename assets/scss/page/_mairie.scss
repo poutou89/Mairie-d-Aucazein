@@ -1,0 +1,88 @@
+@use "../abstract/variables" as vstyle;
+
+#equipe  {
+    .container {
+        .municipale {
+            display: flex;
+            gap: 10vh;
+            .municipale-img {
+                width: 30%;
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .municipale-text {
+                background-color: vstyle.$text-color;
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+#horaire {
+    .container {
+        display: flex;
+        flex-direction: column;
+        .horaire {
+            display: flex;
+            justify-content: space-between;
+            .horaire-text  {
+                display: flex;
+                flex-direction: column;
+                background-color: vstyle.$text-color;
+                width: 30%;
+                height: 400px;
+                color: white;
+                border-radius: 10px;
+                p {
+                    padding: 0 0 0 4vh;
+                }
+                h4:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+            .map {
+                iframe {
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+#service {
+    .container {
+        .service {
+            display: flex;
+            justify-content: space-around;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 3vh;
+                li {
+                    a  {
+                        text-decoration: vstyle.$style-less;
+                        color: gray;
+                    }
+                    a:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+.separation {
+    width: 90%;
+    background-color: vstyle.$bg-color;
+    height: 2px;
+    margin: 4vh auto;
+}

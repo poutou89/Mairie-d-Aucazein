@@ -141,6 +141,9 @@ footer .container .rs {
   display: flex;
   gap: 4vh;
 }
+footer .container .rs a:hover {
+  opacity: 75%;
+}
 
 @font-face {
   font-family: "Marianne";
@@ -390,6 +393,80 @@ footer .container .rs {
 
 .carousel-dots .inactive {
   border: 10px solid #19535F;
+}
+
+#equipe .container .municipale {
+  display: flex;
+  gap: 10vh;
+}
+#equipe .container .municipale .municipale-img {
+  width: 30%;
+}
+#equipe .container .municipale .municipale-img img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+#equipe .container .municipale .municipale-text {
+  background-color: #19535F;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+}
+
+#horaire .container {
+  display: flex;
+  flex-direction: column;
+}
+#horaire .container .horaire {
+  display: flex;
+  justify-content: space-between;
+}
+#horaire .container .horaire .horaire-text {
+  display: flex;
+  flex-direction: column;
+  background-color: #19535F;
+  width: 30%;
+  height: 400px;
+  color: white;
+  border-radius: 10px;
+}
+#horaire .container .horaire .horaire-text p {
+  padding: 0 0 0 4vh;
+}
+#horaire .container .horaire .horaire-text h4:last-of-type {
+  margin-bottom: 0;
+}
+#horaire .container .horaire .map iframe {
+  border-radius: 10px;
+}
+
+#service .container .service {
+  display: flex;
+  justify-content: space-around;
+}
+#service .container .service ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+#service .container .service ul li a {
+  text-decoration: none;
+  color: gray;
+}
+#service .container .service ul li a:hover {
+  color: black;
+}
+
+.separation {
+  width: 90%;
+  background-color: #C3DAC3;
+  height: 2px;
+  margin: 4vh auto;
 }
 
 /*# sourceMappingURL=style.css.map */

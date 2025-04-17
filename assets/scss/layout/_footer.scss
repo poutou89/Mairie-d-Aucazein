@@ -25,6 +25,10 @@ footer {
         .rs {
             display: flex;
             gap: 4vh;
+        
         }
-    }
+        .rs a:hover {
+            opacity: 75%;
+        }
+    }   
 }
