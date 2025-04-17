@@ -288,14 +288,26 @@ footer .container .rs a:hover {
 #decouvrir .decouverte .flex .ponts img {
   object-position: top;
 }
+#decouvrir .decouverte .flex .ponts:hover h4 {
+  color: gray;
+}
 #decouvrir .decouverte .flex .chapelle img {
   object-position: center;
+}
+#decouvrir .decouverte .flex .chapelle:hover h4 {
+  color: purple;
 }
 #decouvrir .decouverte .flex .parc img {
   object-position: center;
 }
+#decouvrir .decouverte .flex .parc:hover h4 {
+  color: rgb(13, 143, 13);
+}
 #decouvrir .decouverte .flex .jardin img {
   object-position: center;
+}
+#decouvrir .decouverte .flex .jardin:hover h4 {
+  color: rgb(45, 45, 239);
 }
 #decouvrir .decouverte .frame {
   display: flex;
@@ -322,8 +334,19 @@ footer .container .rs a:hover {
   display: flex;
   justify-content: space-between;
 }
+.activite .active {
+  color: #19535F;
+  text-align: left;
+}
 .activite .sport img {
   object-position: center;
+}
+.activite a {
+  width: 40%;
+}
+.activite .align {
+  display: flex;
+  justify-content: end;
 }
 
 .container {
