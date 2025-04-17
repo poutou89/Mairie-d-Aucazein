@@ -3,8 +3,9 @@ header {
 }
 header .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  width: 90%;
 }
 header .container .header-img {
   width: 3.2rem;
@@ -15,18 +16,27 @@ header .container .header-img a img {
 header .container .header-img a img:hover {
   opacity: 75%;
 }
-header .container ul {
-  display: flex;
-  gap: 8vh;
+header .container nav {
+  min-width: 50vw;
 }
-header .container ul li a {
+header .container nav ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+header .container nav ul li {
+  width: 100%;
+  text-align: center;
+  width: 135px;
+}
+header .container nav ul li a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #19535F;
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);
   transition: text-decoration-color 300ms;
 }
-header .container ul li a:hover {
+header .container nav ul li a:hover {
   text-decoration-color: rgb(25, 83, 95);
 }
 
@@ -52,6 +62,10 @@ h3,
 h4,
 a {
   font-family: "Marianne";
+}
+
+.menu {
+  display: none;
 }
 
 h1,
@@ -120,8 +134,10 @@ footer {
 }
 footer .container {
   display: flex;
-  justify-content: space-between;
+  gap: 10vh;
   align-items: center;
+  justify-content: center;
+  width: 90%;
 }
 footer .container .footer-logo {
   width: 3.2rem;
@@ -131,7 +147,12 @@ footer .container .footer-logo img {
 }
 footer .container ul {
   display: flex;
-  gap: 20vh;
+  justify-content: space-around;
+  min-width: 40vw;
+  padding: 0;
+}
+footer .container ul li {
+  padding: 1vh;
 }
 footer .container ul li a {
   text-decoration: none;
@@ -145,6 +166,44 @@ footer .container .rs a:hover {
   opacity: 75%;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .menu {
+    display: flex;
+  }
+  main #Mairie .container .presentation {
+    flex-direction: column;
+    gap: inherit;
+  }
+  main #Mairie .container .presentation .presentation-text {
+    width: inherit;
+    box-shadow: inherit;
+    border-radius: inherit;
+    border-top-right-radius: 2vh;
+    border-top-left-radius: 2vh;
+  }
+  main #Mairie .container .presentation .presentation-img {
+    width: inherit;
+  }
+  main #Mairie .container .presentation .presentation-img img {
+    box-shadow: inherit;
+    border-radius: inherit;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+  }
+  footer .container {
+    justify-content: space-around;
+  }
+  footer .container ul {
+    flex-direction: column;
+    min-width: inherit;
+  }
+}
 @font-face {
   font-family: "Marianne";
   src: url(../fonts/Marianne/Marianne-Regular.ttf);

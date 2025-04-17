@@ -4,8 +4,10 @@ footer {
     background-color: vstyle.$bg-color;
     .container {
         display: flex;
-        justify-content: space-between;
+        gap: 10vh;
         align-items: center;
+        justify-content: center;
+        width: 90%;
         .footer-logo {
             width: 3.2rem;
             img {
@@ -14,8 +16,11 @@ footer {
         }
         ul {
             display: flex;
-            gap: 20vh;
+            justify-content: space-around;
+            min-width: 40vw;
+            padding: 0;
             li {
+                padding: 1vh;
                 a {
                     text-decoration: vstyle.$style-less;
                     color: black;
