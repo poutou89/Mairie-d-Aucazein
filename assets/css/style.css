@@ -1,0 +1,395 @@
+header {
+  background-color: #C3DAC3;
+}
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .container .header-img {
+  width: 3.2rem;
+}
+header .container .header-img a img {
+  width: 100%;
+}
+header .container .header-img a img:hover {
+  opacity: 75%;
+}
+header .container ul {
+  display: flex;
+  gap: 8vh;
+}
+header .container ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #19535F;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+}
+header .container ul li a:hover {
+  text-decoration-color: rgb(25, 83, 95);
+}
+
+.container {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Marianne";
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3rem;
+  color: #19535F;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Spectral";
+}
+
+ul {
+  list-style: none;
+}
+
+textarea,
+input,
+button {
+  font-family: "Spectral";
+}
+
+main #Mairie .container {
+  display: flex;
+  flex-direction: column;
+}
+main #Mairie .container h1 {
+  text-align: center;
+}
+main #Mairie .container .presentation {
+  display: flex;
+  gap: 6vh;
+}
+main #Mairie .container .presentation .presentation-text {
+  width: 50%;
+  background-color: #19535F;
+  color: white;
+  padding: 2vh;
+  border-radius: 2vh;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+main #Mairie .container .presentation .presentation-img {
+  width: 50%;
+}
+main #Mairie .container .presentation .presentation-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2vh;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #C3DAC3;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .footer-logo {
+  width: 3.2rem;
+}
+footer .container .footer-logo img {
+  width: 100%;
+}
+footer .container ul {
+  display: flex;
+  gap: 20vh;
+}
+footer .container ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer .container .rs {
+  display: flex;
+  gap: 4vh;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url(../fonts/Marianne/Marianne-Regular.ttf);
+}
+@font-face {
+  font-family: "Spectral";
+  src: url(../fonts/Spectral/Spectral-Regular.ttf);
+}
+.btn {
+  padding: 1.5vh 2vh;
+  background-color: #FF7D00;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #19535F;
+  text-decoration: none;
+  border: 2px solid #FF7D00;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #19535F;
+  color: #FF7D00;
+  border: 2px solid #FF7D00;
+  cursor: pointer;
+}
+
+.search {
+  padding: 1.5vh 2vh;
+  background-color: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #19535F;
+  text-decoration: none;
+  border: 2px solid #C3DAC3;
+  transition: 0.3s;
+}
+
+.search:hover {
+  color: #C3DAC3;
+  border: 2px solid #19535F;
+  cursor: pointer;
+}
+
+.formulaire-container {
+  background-color: #19535F;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 2vh auto;
+  color: white;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.formulaire {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formulaire-champ {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.formulaire-champ label {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.formulaire-champ input, .formulaire-champ textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.formulaire-champ textarea {
+  resize: vertical;
+  min-height: 5vh;
+}
+.formulaire-champ.champ-max {
+  grid-column: 1 4;
+  grid-row: 1 2;
+}
+.formulaire-champ.conteneur-bouton {
+  grid-column: 4;
+  display: flex;
+  justify-content: center;
+}
+
+.formulaire-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #FF7D00;
+  color: #19535F;
+}
+.formulaire-message.hidden {
+  display: none;
+}
+
+.card {
+  background-color: #19535F;
+  width: 20vw;
+  height: 35vh;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.card p,
+.card h4 {
+  margin: 1rem 0 0 0;
+  padding: 0 1rem;
+}
+.card div {
+  width: 100%;
+  height: 40%;
+}
+.card div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#decouvrir {
+  display: flex;
+  justify-content: center;
+}
+#decouvrir .decouverte {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+#decouvrir .decouverte .flex {
+  display: flex;
+  flex-direction: column;
+}
+#decouvrir .decouverte .flex .ponts img {
+  object-position: top;
+}
+#decouvrir .decouverte .flex .chapelle img {
+  object-position: center;
+}
+#decouvrir .decouverte .flex .parc img {
+  object-position: center;
+}
+#decouvrir .decouverte .flex .jardin img {
+  object-position: center;
+}
+#decouvrir .decouverte .frame {
+  display: flex;
+  align-items: center;
+}
+
+.commune {
+  width: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.commune .histoire {
+  padding: 0 1rem;
+  width: 100%;
+  background-color: #19535F;
+  border-radius: 0.8rem;
+}
+.commune .histoire h3,
+.commune .histoire p {
+  color: white;
+}
+
+.activite {
+  display: flex;
+  justify-content: space-between;
+}
+.activite .sport img {
+  object-position: center;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+  height: 50vh;
+  flex-wrap: nowrap;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.slide img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-controls {
+  position: absolute;
+  z-index: 5;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-controls button {
+  padding: 4px 10px;
+  background-color: rgba(195, 218, 195, 0.5);
+  border-radius: 10px;
+}
+
+.carousel-dots {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  right: 50%;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-dots .dot {
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.carousel-dots .active {
+  border: 10px solid #C3DAC3 !important;
+}
+
+.carousel-dots .inactive {
+  border: 10px solid #19535F;
+}
+
+/*# sourceMappingURL=style.css.map */
