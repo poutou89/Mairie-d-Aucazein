@@ -27,3 +27,28 @@ document.addEventListener("DOMContentLoaded", () => {
       messageBox.classList.remove("hidden");
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const events = document.querySelectorAll(".card-bis");
+
+  events.forEach(card => {
+    const dateAttr = card.getAttribute("data-date");
+    if (dateAttr) {
+      const eventDate = new Date(dateAttr);
+      if (eventDate < today) {
+        card.style.display = "none";
+      }
+    }
+  });
+});
+
+function openForm(formId) {
+  document.getElementById(formId).style.display = "flex";
+}
+
+function closeForm(formId) {
+  document.getElementById(formId).style.display = "none";
+}
