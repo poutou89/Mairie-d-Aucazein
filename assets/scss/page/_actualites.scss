@@ -1,0 +1,21 @@
+@use "../abstract/variables" as vstyle;
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20vw;
+    row-gap: 3rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    .btn{
+        margin:0.5rem;
+    }
+}
