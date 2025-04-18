@@ -196,6 +196,17 @@ footer .container .rs a:hover {
     border-bottom-left-radius: 2vh;
     border-bottom-right-radius: 2vh;
   }
+  #equipe .container .municipale {
+    flex-direction: column;
+    gap: inherit;
+  }
+  #equipe .container .municipale .municipale-img {
+    width: 90%;
+  }
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+  }
   footer .container {
     justify-content: space-around;
   }

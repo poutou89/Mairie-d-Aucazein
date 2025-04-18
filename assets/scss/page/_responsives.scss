@@ -39,6 +39,22 @@
             }
     }
 
+    #equipe {
+        .container {
+            .municipale {
+                flex-direction: column;
+                gap: inherit;
+                .municipale-img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .formulaire {
+        display: flex;
+        flex-direction: column;
+    }
+
     footer {
         .container {
             justify-content: space-around;
