@@ -490,6 +490,13 @@ footer .container .rs a:hover {
 .activite .sport img {
   object-position: center;
 }
+.activite a {
+  width: 40%;
+}
+.activite .align {
+  display: flex;
+  justify-content: end;
+}
 
 .histoire-wrapper {
   display: flex;
