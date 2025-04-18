@@ -397,14 +397,26 @@ footer .container .rs a:hover {
 #decouvrir .decouverte .flex .ponts img {
   object-position: top;
 }
+#decouvrir .decouverte .flex .ponts:hover h4 {
+  color: gray;
+}
 #decouvrir .decouverte .flex .chapelle img {
   object-position: center;
+}
+#decouvrir .decouverte .flex .chapelle:hover h4 {
+  color: purple;
 }
 #decouvrir .decouverte .flex .parc img {
   object-position: center;
 }
+#decouvrir .decouverte .flex .parc:hover h4 {
+  color: green;
+}
 #decouvrir .decouverte .flex .jardin img {
   object-position: center;
+}
+#decouvrir .decouverte .flex .jardin:hover h4 {
+  color: blue;
 }
 #decouvrir .decouverte .frame {
   display: flex;

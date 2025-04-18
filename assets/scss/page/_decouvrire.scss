@@ -18,16 +18,32 @@
                 object-position: top;
             }
 
+            .ponts:hover h4 {
+                color: gray;
+            }
+
             .chapelle img {
                 object-position: center;
+            }
+
+            .chapelle:hover h4 {
+                color: purple;
             }
 
             .parc img {
                 object-position: center;
             }
 
+            .parc:hover h4 {
+                color: green;
+            }
+
             .jardin img {
                 object-position: center;
+            }
+
+            .jardin:hover h4 {
+                color: blue;
             }
         }
 
