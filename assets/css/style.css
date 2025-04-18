@@ -247,6 +247,37 @@ footer .container .rs a:hover {
   main #event .grid .card-bis {
     height: inherit;
   }
+  main #top .histoire-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  main #top .histoire-wrapper .contain-car {
+    max-width: inherit;
+  }
+  main #top .histoire-wrapper .commune {
+    width: inherit;
+  }
+  main #top .histoire-wrapper .commune .histoire {
+    text-align: center;
+  }
+  main #decouvrir .decouverte {
+    flex-direction: column;
+  }
+  main #decouvrir .decouverte .card {
+    width: inherit;
+    height: 60vh;
+  }
+  main #decouvrir .decouverte .frame {
+    justify-content: center;
+    order: 3;
+  }
+  main #activite .activite {
+    flex-direction: column;
+  }
+  main #activite .activite .card {
+    width: inherit;
+    height: 60vh;
+  }
   #contactForm {
     display: flex;
     flex-direction: column;
@@ -511,6 +542,12 @@ footer .container .rs a:hover {
 }
 .histoire-wrapper .contain-car {
   max-width: 40%;
+}
+.histoire-wrapper .carousel-dots .inactive {
+  border: 10px solid white;
+}
+.histoire-wrapper .carousel-dots .active {
+  border: 10px solid black !important;
 }
 
 .container {

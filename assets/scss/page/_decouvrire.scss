@@ -107,4 +107,10 @@
     .contain-car {
       max-width: 40%;
     }
+    .carousel-dots .inactive {
+        border: 10px solid white;
+      }
+      .carousel-dots .active {
+        border: 10px solid black !important;
+      }
 }

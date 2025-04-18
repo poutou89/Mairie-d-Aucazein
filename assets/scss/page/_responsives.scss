@@ -103,7 +103,44 @@
             }
         }
     }
-    
+    #top {
+        .histoire-wrapper {
+            flex-direction: column;
+            align-items: center;
+            .contain-car {
+                max-width: inherit;
+            }
+            .commune {
+                width: inherit;
+                .histoire {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #decouvrir {
+        .decouverte {
+            flex-direction: column;
+            .card {
+                width: inherit;
+                height: 60vh;
+            }
+            .frame {
+                justify-content: center;
+                order: 3;
+            }
+        }
+        
+    }
+    #activite {
+        .activite {
+            flex-direction: column;
+            .card {
+                width: inherit;
+                height: 60vh;
+            }
+        }
+    }
 }
 
     #contactForm {
