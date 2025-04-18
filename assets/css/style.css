@@ -491,6 +491,21 @@ footer .container .rs a:hover {
   object-position: center;
 }
 
+.histoire-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #19535F;
+  border-radius: 10px;
+}
+.histoire-wrapper .contain-histoire {
+  max-width: 30%;
+}
+.histoire-wrapper .contain-car {
+  max-width: 40%;
+}
+
 .container {
   overflow: hidden;
 }

@@ -82,3 +82,19 @@
     }
 
 }
+
+.histoire-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: vstyle.$text-color;
+    border-radius: 10px;
+
+    .contain-histoire{
+        max-width: 30%;
+    }
+    .contain-car {
+      max-width: 40%;
+    }
+}
